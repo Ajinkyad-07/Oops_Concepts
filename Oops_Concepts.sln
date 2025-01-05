@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{7E12F3DD-57F6-4D71-B89D-9F2C78ACC924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{31B1C2E3-9DF5-4E61-813B-D50FD00ACBAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstraction", "Abstraction\Abstraction.csproj", "{AAF4A8F3-41AB-4219-AD8A-1C5F5ABF9E78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E12F3DD-57F6-4D71-B89D-9F2C78ACC924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E12F3DD-57F6-4D71-B89D-9F2C78ACC924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E12F3DD-57F6-4D71-B89D-9F2C78ACC924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E12F3DD-57F6-4D71-B89D-9F2C78ACC924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31B1C2E3-9DF5-4E61-813B-D50FD00ACBAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B1C2E3-9DF5-4E61-813B-D50FD00ACBAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B1C2E3-9DF5-4E61-813B-D50FD00ACBAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B1C2E3-9DF5-4E61-813B-D50FD00ACBAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF4A8F3-41AB-4219-AD8A-1C5F5ABF9E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF4A8F3-41AB-4219-AD8A-1C5F5ABF9E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF4A8F3-41AB-4219-AD8A-1C5F5ABF9E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF4A8F3-41AB-4219-AD8A-1C5F5ABF9E78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

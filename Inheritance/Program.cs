@@ -1,44 +1,83 @@
-﻿namespace Inheritance
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Inheritance
 {
+
+    class A
+    {
+        public A()
+        {
+        }
+
+        public virtual void method1()
+        {
+            Console.WriteLine("method1 - A");
+            var abc = new Dictionary<int, string>() {
+                        { 1, "one" },
+                        { 2, "two" },
+                        { 3, "three" },
+                        { 4, "four" }
+                    };
+            abc.TryGetValue(1, out var str);
+            Console.WriteLine(str);
+        }
+    }
+
+    class B : A
+    {
+        public B()
+        {
+        }
+
+        public override void method1()
+        {
+            Console.WriteLine("method11 - B");
+
+        }
+    }
     internal class Program
     {
         static void Main(string[] args)
         {
-            // Single Inhertance
-            Console.WriteLine("------------- Single Inhertance -------------");
-            var dog = new Dog();
-            dog.Bark();
-            dog.Eat();
 
-            // Multilevel Inhertance
-            Console.WriteLine("------------- Multilevel Inhertance -------------");
-            var dog1 = new Dog1();
-            dog1.Bark();
-            dog1.Eat();
-            dog1.Walk();
+            A a = new A();
+           a.method1();
 
-            // Hierarchical Inhertance
-            Console.WriteLine("------------- Multilevel Inhertance -------------");
-            var cat = new Cat();
-            cat.Eat();
-            cat.Meow();
+            //// Single Inhertance
+            //Console.WriteLine("------------- Single Inhertance -------------");
+            //var dog = new Dog();
+            //dog.Bark();
+            //dog.Eat();
 
-            var cow = new Cow();
-            cow.Eat();
-            cow.Milk();
+            //// Multilevel Inhertance
+            //Console.WriteLine("------------- Multilevel Inhertance -------------");
+            //var dog1 = new Dog1();
+            //dog1.Bark();
+            //dog1.Eat();
+            //dog1.Walk();
 
-            // Hybrid Inhertance
-            Console.WriteLine("------------- Hybrid Inhertance -------------");
-            var horse = new Horse();
-            horse.Eat();
-            horse.Play();
-            horse.Runs();
+            //// Hierarchical Inhertance
+            //Console.WriteLine("------------- Multilevel Inhertance -------------");
+            //var cat = new Cat();
+            //cat.Eat();
+            //cat.Meow();
 
-            // Multiple Inhertance
-            Console.WriteLine("------------- Multiple Inhertance -------------");
-            var huskey = new Huskey();
-            huskey.Eat(); 
-            huskey.Play();
+            //var cow = new Cow();
+            //cow.Eat();
+            //cow.Milk();
+
+            //// Hybrid Inhertance
+            //Console.WriteLine("------------- Hybrid Inhertance -------------");
+            //var horse = new Horse();
+            //horse.Eat();
+            //horse.Play();
+            //horse.Runs();
+
+            //// Multiple Inhertance
+            //Console.WriteLine("------------- Multiple Inhertance -------------");
+            //var huskey = new Huskey();
+            //huskey.Eat(); 
+            //huskey.Play();
 
         }
     }

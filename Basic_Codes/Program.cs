@@ -13,7 +13,8 @@ namespace Basic_Codes
             //CheckIfStringIsPalindrom();
             //var factoutput = Factorial(10);
             //Console.WriteLine("factoutput => " + factoutput);
-            Fibonacci();
+            //Fibonacci();
+            //IsArrayIsSortedAndSort();
         }
 
 
@@ -119,6 +120,33 @@ namespace Basic_Codes
             }
 
             Console.WriteLine(outputString.ToString());
+        }
+
+        public static void IsArrayIsSortedAndSort()
+        {
+            int[] arr = { 1, 5, 3, 4, 9 };
+            bool status = true;
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i] < arr[i-1])
+                    status = false;
+            }
+
+            Console.WriteLine("Array is " + (status ? "Sorted..." : "not Sorted..."));
+
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                for (int j = 0; j < arr.Length -1; j++)
+                {
+                    if (arr[j] > arr[j + 1])
+                    {
+                        int temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+            Console.WriteLine("Sorted Array: " + string.Join(", ", arr));
         }
     }
 }
